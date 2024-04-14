@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Змейка</title>
+    <link rel="shortcut icon" href="snake1.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        const gamemode = "doubleplayer";
+    </script>
+</head>
+<body class="fixed">
+    <div id="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">В главное меню</a></li>
+                <input type="text" id="username0" name="username0">
+                <input type="text" id="username1" name="username1">
+                <li><a onclick="gameStart()">Начало игры</a></li>
+            </ul>
+        </div>
+        <br>
+        <p id="status">Нажмите "W, A, S, D" для управления змейкой</p>
+        <div id="gameContainer">
+            <div id="gameScore-Top">
+                <p id="score0">Счёт: 0<p>
+                <p id="max-score0">Макc: 0<p></p>
+            </div>
+            <canvas id="gameCanvas" width="401px" height="401px"></canvas>
+            <div id="gameScore-Bottom">
+                <p id="score1">Счёт: 0</p>
+                <p id="max-score1">Макс: 0</p>
+            </div>
+        </div>
+        <p id="status">Нажмите "↑, ←, →, ↓" для управления змейкой</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

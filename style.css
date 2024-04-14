@@ -1,0 +1,148 @@
+* { margin: 0; }
+
+body {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: green;
+}
+
+body.fixed {
+    overflow: hidden;
+}
+
+#container {
+    width: 400px;
+    height: 725px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameContainer {
+    margin: 10px 0;
+    position: relative;
+    width: 403px;
+    height: 490px;
+}
+
+canvas#gameCanvas {
+    left: 0;
+    margin-top: 44px;
+    position: absolute;
+    border: 1px solid #000;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: darkgreen;
+}
+
+#gameScore-Top, #gameScore-Bottom {
+    width: 140px;
+    height: 40px;
+
+    padding: 0 10px;
+
+    position: absolute;
+    z-index: 2;
+    
+    font-size: 1.25em;
+
+    background-color: darkgreen;
+    border: 1px solid #000;
+}
+
+#gameScore-Top {
+    top: 0;
+    left: 0;
+
+    padding-top: 4px;
+    text-align: left;
+
+    border-bottom-color: darkgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#gameScore-Bottom {
+    bottom: 0;
+    right: 0;
+
+    padding-bottom: 4px;
+    text-align: right;
+
+    border-top-color: darkgreen;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#max-score0, #max-score1 { font-size: 0.6em; }
+
+
+
+.menu {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#container .menu { margin-top: 0; }
+
+.menu h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.menu h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e65c00;
+}
